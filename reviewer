@@ -10,7 +10,7 @@ class TestIsAdult(unittest.TestCase):
         self.assertFalse(is_adult(17))
 
     def test_negative_age(self):
-        # 年龄不可能为负数，应该抛异常，而不是返回 False
+        # Age cannot be negative; an exception should be thrown instead of returning False.
         with self.assertRaises(ValueError):
             is_adult(-1)
 
